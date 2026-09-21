@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "text-mining-aol",
+      "path": "."
+    },
+    {
+      "name": "obsidian-vault (idea-swirling)",
+      "path": "../obsi-vault/idea-swirling"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.obsidian": true
+    },
+    "search.exclude": {
+      "**/data/raw": true,
+      "**/.obsidian": true
+    }
+  }
+}

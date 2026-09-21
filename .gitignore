@@ -1,0 +1,9 @@
+# scraped articles and trained models stay private
+data/
+models/
+
+# agent tooling backup - contains bot_token / app_password fields
+.kiro/backup-crew/
+
+.ipynb_checkpoints/
+__pycache__/
