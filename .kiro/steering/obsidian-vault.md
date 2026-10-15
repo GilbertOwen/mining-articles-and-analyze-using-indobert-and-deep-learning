@@ -14,11 +14,11 @@ At the start of any task in this repo, read the vault notes rather than re-deriv
 
 | Note | Holds |
 |---|---|
-| `text-mining-app.md` | hub: pipeline, repo paths, current state |
+| `text-mining.md` | hub: pipeline, repo paths, current state |
 | `brief-and-grading.md` | assignment tasks, weights, deliverables, AI-use prohibitions |
-| `decisions.md` | settled decisions + rationale, provisional config, open questions |
+| `text-mining-decisions.md` | settled decisions + rationale, provisional config, open questions |
 | `detik-source-notes.md` | verified scraping facts: URL patterns, selectors, quirks, volumes |
-| `progress-log.md` | notebook section status, next action, stage specs |
+| `text-mining-progress-log.md` | notebook section status, next action, stage specs |
 | `lecture-map.md` | lecture sessions mapped to project stages, slide errors |
 
 The repo's `HANDOFF.md` carries the same context in one file; the vault is the version that stays updated.
@@ -27,15 +27,15 @@ The repo's `HANDOFF.md` carries the same context in one file; the vault is the v
 
 When a task changes the project's state, update the vault in the same session:
 
-- section finished, run completed, or blocker hit → `progress-log.md` (status table + "Next action")
-- a choice fixed (labels, dates, hyperparameters, methods) → `decisions.md`, with the rationale in the same row
+- section finished, run completed, or blocker hit → `text-mining-progress-log.md` (status table + "Next action")
+- a choice fixed (labels, dates, hyperparameters, methods) → `text-mining-decisions.md`, with the rationale in the same row
 - new verified fact about a data source → `detik-source-notes.md`
-- question that needs the lecturer → the open-questions callout in `decisions.md`
+- question that needs the lecturer → the open-questions callout in `text-mining-decisions.md`
 
 Keep the existing shape: YAML frontmatter with `updated:`, `[[wikilinks]]` between notes, `> [!warning]` / `> [!question]` / `> [!bug]` callouts. Bump `updated:` on every edit. Do not restructure notes that already exist; append or edit in place.
 
 ## Vault conventions
 
-- One note per concern, linked from `text-mining-app.md`. New notes must be linked from the hub.
+- One note per concern, linked from `text-mining.md`. New notes must be linked from the hub.
 - Facts get a provenance marker: measured/verified date, or the slide reference (`S12 sl.34`).
 - Never record a metric, count or result that has not actually been produced by a run.
